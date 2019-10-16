@@ -1,0 +1,77 @@
+{% extends 'webapp/base.html' %}
+
+{% block title %} Add Items {% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row" style="width: 800px; text-align: center; margin-top: 20px; margin-left: 150px;">
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                </div>
+                <div class="input-group-append">
+                    <span class="input-group-text" id="">Upload</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Maggie 140g (70gx2)</td>
+                <td>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                    </select>
+                </td>
+                <td>23.00</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Cadbury - Oreo Biscuit - Vanilla Creme (120 gm) </td>
+                <td>
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                    </select>
+                </td>
+                <td>82.71</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Sunfeast - Dark Fantasy - Choco Fills (3x75 gm)</td>
+                <td>
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                    </select>
+                </td>
+                <td>85.56</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
+
+
