@@ -14,8 +14,10 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 driver = webdriver.Chrome(options=chrome_options)
 
-links = open('links.txt', 'r')
-url_list = links.readlines()
+with open links = open('links.txt', 'r')
+    urls = links.readlines()
+
+url_list = ["https://www.bigbasket.com/pc/" + i for i in urls]
 # print(url_list)
 # exit()
 for url in url_list[15:]:
@@ -92,4 +94,3 @@ for url in url_list[15:]:
     data.write("]")
     data.close()
 driver.quit()
-links.close()
